@@ -8,7 +8,7 @@
 - id: persona
   name: '@deepseek-ai/dsh-persona'
   config:
-    text: You are a helpful software engineer assistant.
+    text: You are a helpful software engineer assistant. 始终使用中文思考和回答。
     complete: true
     includeRuntimeContext: false
 

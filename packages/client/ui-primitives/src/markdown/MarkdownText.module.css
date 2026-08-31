@@ -15,27 +15,27 @@
 
 .markdown h1 {
   font: var(--dsw-font-markdown-h1);
-  margin: 32px 0 16px;
+  margin: 12px 0 6px;
 }
 
 .markdown h2 {
   font: var(--dsw-font-markdown-h2);
-  margin: 32px 0 16px;
+  margin: 12px 0 6px;
 }
 
 .markdown h3 {
   font: var(--dsw-font-markdown-h3);
-  margin: 32px 0 16px;
+  margin: 12px 0 6px;
 }
 
 .markdown h4 {
   font: var(--dsw-font-markdown-h4);
-  margin: 16px 0;
+  margin: 8px 0;
 }
 
 .markdown :where(h5, h6) {
   font: var(--dsw-font-markdown-base-strong);
-  margin: 16px 0;
+  margin: 8px 0;
 }
 
 .markdown :where(h1, h2, h3, h4, h5, h6) strong {
@@ -43,16 +43,16 @@
 }
 
 .markdown p {
-  margin: 16px 0;
+  margin: 4px 0;
 }
 
 /* Tighten h4–h6 against a following list (design: 8px gap). */
 .markdown :where(h4, h5, h6) + :where(ul, ol) {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .markdown :where(h4, h5, h6):has(+ :where(ul, ol)) {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .markdown a {
@@ -83,20 +83,20 @@
 }
 
 .markdown :where(ul, ol) {
-  margin: 16px 0;
+  margin: 4px 0;
   padding-left: 18px;
 }
 
 .markdown li:not(:first-child) {
-  margin-top: 6px;
+  margin-top: 2px;
 }
 
 .markdown li > :where(ul, ol) {
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .markdown li::marker {
-  line-height: 28px;
+  line-height: 16px;
   color: var(--dsw-alias-label-secondary);
 }
 
@@ -111,7 +111,7 @@
 }
 
 .markdown li > p {
-  margin: 8px 0;
+  margin: 4px 0;
 }
 
 .markdown li > *:first-child {
@@ -127,18 +127,18 @@
   display: block;
   border: none;
   height: 1px;
-  margin: 32px 0;
+  margin: 12px 0;
   background: var(--dsw-alias-border-l2);
 }
 
 .markdown blockquote {
   border-left: 2px solid var(--dsw-alias-label-caption);
-  margin: 16px 0 0;
+  margin: 6px 0 0;
   padding-left: 14px;
 }
 
 .markdown pre {
-  margin: 16px 0;
+  margin: 6px 0;
   font-family: var(--ds-font-family-code);
   overflow: auto;
 }

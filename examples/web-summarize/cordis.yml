@@ -1,0 +1,12 @@
+# Opt-in re-summarize patch over the shipped Web composition. After an agent
+# turn closes, this plugin steers one concise closing summary when the final
+# visible answer is at least `minChars` long (default 600).
+- insert:
+    - id: summarize
+      name: '@deepseek-ai/dsh-summarize'
+      # Optional tuning (all defaults shown):
+      # config:
+      #   minChars: 600
+      #   maxChars: 400
+      #   includeSubagents: false
+      #   prompt: "把这次任务的最终结果浓缩成简洁精炼的总结……"
