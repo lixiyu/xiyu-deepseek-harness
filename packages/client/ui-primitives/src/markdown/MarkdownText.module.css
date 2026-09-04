@@ -185,19 +185,21 @@
 
 .tableScroll th {
   text-align: start;
-  padding: 10px 16px;
+  padding: 6px 12px;
   border-bottom: 1px solid var(--dsw-alias-border-l3);
   border-top: none;
-  font: var(--dsw-font-markdown-table-head);
+  /* Match body copy: the Figma table tokens (15px/25px) render larger than
+     prose; body-level 13px/16px keeps tables within the text rhythm. */
+  font: var(--dsw-font-markdown-base-strong);
   max-width: 320px;
   max-width: min(30vw, 320px);
   min-width: 100px;
 }
 
 .tableScroll td {
-  padding: 10px 16px;
+  padding: 6px 12px;
   border-bottom: 1px solid var(--dsw-alias-border-l2);
-  font: var(--dsw-font-markdown-table);
+  font: var(--dsw-font-markdown-base);
   max-width: 320px;
   max-width: min(30vw, 320px);
   min-width: 100px;

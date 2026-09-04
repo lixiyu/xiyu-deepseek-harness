@@ -57,6 +57,22 @@
   display: none;
 }
 
+/* Compact disclosure rows — context injection, assistant steps (Think), and
+   tool rows (GREP/Edit/Bash/…) — share the 24px DisclosureRow chrome; halve
+   the column's 16px rhythm between any two adjacent compact rows (16 - 8 = 8px).
+   Non-compact rows (user bubbles, turn tails) keep the full rhythm. */
+:is(
+  .flowItem[data-chat-flow-kind='context'],
+  .flowItem[data-chat-flow-kind='assistant-step'],
+  .flowItem[data-chat-flow-kind='tool-call']
+) + :is(
+  .flowItem[data-chat-flow-kind='context'],
+  .flowItem[data-chat-flow-kind='assistant-step'],
+  .flowItem[data-chat-flow-kind='tool-call']
+) {
+  margin-top: -8px;
+}
+
 .callRow {
   border-radius: 6px;
 }
